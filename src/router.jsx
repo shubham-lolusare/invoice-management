@@ -1,5 +1,5 @@
 import {
-  createBrowserRouter,
+  createHashRouter,
   createRoutesFromElements,
   Route,
 } from "react-router-dom";
@@ -14,7 +14,8 @@ import HooksWrapper from "./components/common/HooksWrapper.jsx";
 import StoreInvoice from "./components/invoice/StoreInvoice.jsx";
 import PreviewInvoice from "./components/invoice/PreviewInvoice.jsx";
 
-const router = createBrowserRouter(
+// hash router is used for the static deployment purpose on github
+const router = createHashRouter(
   createRoutesFromElements(
     <Route
       path="/"
