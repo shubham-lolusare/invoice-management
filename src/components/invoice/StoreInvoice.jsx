@@ -145,13 +145,6 @@ class StoreInvoice extends Component {
                 Store Invoice
               </button>
             </form>
-
-            <embed
-              src={this.state.pdfBase64}
-              width="500"
-              height="400"
-              type="application/pdf"
-            />
           </section>
         </section>
 
