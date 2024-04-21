@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* classes for hiding scrollbar */
+.scrollBox::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollBox {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* classes to show three dots on overflowing text */
+.ellipses {
+  display: inline-block;
+  width: 100px;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+
+/* hiding input number up down arrow */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
